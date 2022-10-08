@@ -1,0 +1,107 @@
+html {
+    overflow: hidden;
+}
+
+.main {
+    position: absolute;
+    bottom: 0;
+    right: -40vw;
+    width: 33.35vw;
+    height: 30vw;
+    transition: right 0.75s;
+    background-image: url("./assets/Dashboard.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.bigScrewdriver {
+    z-index: 10;
+    position: absolute;
+    top: 14vw;
+    left: -3.5vw;
+    height: 17.5vw;
+    width: 17.5vw;
+    transition: top 0.15s,left 0.15s;
+    background-image: url("./assets/Big-Screwdriver.png");
+    filter: drop-shadow(0 0 0.55vw rgba(255, 255, 255, 1.0));
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: all;
+}
+
+.smallScrewdriver {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    top: 11.65vw;
+    left: 8.25vw;
+    height: 10.5vw;
+    width: 10.5vw;
+    background-image: url("./assets/Small-Screwdriver-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.crackedKeyHole {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    opacity: 1;
+    top: 13.58vw;
+    left: 16.0vw;
+    height: 4.25vw;
+    width: 4.25vw;
+    transition: top 0.15s,left 0.15s;
+    background-image: url("./assets/Cracked-Key-Hole.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.rotatingCircle {
+    position: absolute;
+    z-index: 20;
+    display: none;
+    top: 12.9vw;
+    left: 15.95vw;
+    transform: rotate(-320deg);
+    height: 5.5vw;
+    width: 5.5vw;
+    background-image: url("./assets/Rotate-1.png");
+    -webkit-filter: drop-shadow(0 0 0.55vw rgba(255, 255, 255, 1.0));
+    -webkit-transition: -webkit-filter 0.25s;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: all;
+}
+
+.timerBarBackground {
+    position: absolute;
+    z-index: 10;
+    width: 25vw;
+    height: 2.5vw;
+    bottom: 0vw;
+    right: 0vw;
+    background: radial-gradient(circle, rgba(27,28,28,1) 0%, rgba(44,44,43,1) 100%);
+    border: 0.5vw solid black;
+    border-radius: 2.0vw;
+}
+
+.timerBar {
+    position: absolute;
+    z-index: 15;
+    width: 0.0vw;
+    max-width: 23.5vw;
+    height: 1.5vw;
+    bottom: 0.5vw;
+    left: 0.75vw;
+    background: linear-gradient(180deg, rgba(104,158,106,1) 0%, rgba(90,161,94,1) 10%, rgba(46,142,54,1) 20%, rgba(14,123,23,1) 30%, rgba(0,112,2,1) 40%, rgba(0,94,1,1) 50%, rgba(0,66,0,1) 60%, rgba(0,41,3,1) 70%, rgba(25,34,28,1) 80%, rgba(7,23,12,1) 90%);
+    border-radius: 2.0vw;
+}
